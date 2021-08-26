@@ -77,7 +77,6 @@ const menu = [
   
   window.addEventListener("DOMContentLoaded", function () {
     let displayMenu = menu.map(function (item) {
-      // console.log(item);
   
       return `<article class="menu-item">
             <img src=${item.img} alt=${item.title} class="photo" />

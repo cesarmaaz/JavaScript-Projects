@@ -107,7 +107,6 @@ function diplayMenuItems(menuItems) {
         </article>`;
   });
   displayMenu = displayMenu.join("");
-  // console.log(displayMenu);
 
   sectionCenter.innerHTML = displayMenu;
 }
@@ -135,11 +134,8 @@ function displayMenuButtons() {
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
-      // console.log(e.currentTarget.dataset);
       const category = e.currentTarget.dataset.id;
-      const menuCategory = menu.filter(function (menuItem) {
-        // console.log(menuItem.category);
-        if (menuItem.category === category) {
+      const menuCategory = menu.filter(function (menuItem) {        if (menuItem.category === category) {
           return menuItem;
         }
       });
